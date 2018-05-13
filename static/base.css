@@ -122,3 +122,12 @@ img {
 .tar{
   text-align: right;
 }
+button{
+  padding: 6px 16px;
+  background-color: #36baff;
+  color: #fff;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
