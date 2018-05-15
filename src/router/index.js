@@ -7,6 +7,7 @@ import Slots from '@/pages/slot/slot'
 import slotScope from '@/pages/slotSCope/slotSCope'
 import activeCompent from '@/pages/activeCompent/activeCompent'
 import Fade from '@/pages/transition/fade'
+import Animate from '@/pages/transition/animate'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/fade',
       name: 'Fade',
       component: Fade
+    }
+    , {
+      path: '/animate',
+      name: 'Animate',
+      component: Animate
     }
   ]
 })

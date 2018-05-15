@@ -9,7 +9,11 @@ function resolve (dir) {
 }
 
 
-
+// define the different HOST between development and production environment
+// var DEV_HOST = JSON.stringify('http://192.168.1.114：8080/')
+var DEV_HOST = JSON.stringify('http://lianku.org.cn')
+var PUB_HOST = JSON.stringify('http://lianku.org.cn')
+var webpack = require('webpack');
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
@@ -29,6 +33,11 @@ module.exports = {
       '@': resolve('src'),
     }
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      HOST: process.env.NODE_ENV === 'production' ? PUB_HOST : DEV_HOST
+    })
+  ],
   module: {
     rules: [
       {

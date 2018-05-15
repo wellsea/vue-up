@@ -7,8 +7,10 @@
       <router-link to="/slot">插槽 slot</router-link>
       <router-link to="/slotScope">作用域插槽</router-link>
       <router-link to="/activeCompent">动态组件与v-once指令</router-link>
-      <router-link to="/fade">过渡动画</router-link>
+      <router-link to="/fade">过渡</router-link>
+      <router-link to="/animate">动画</router-link>
     </nav>
+    <p class="tac"><i class="iconfont icon-biaoqingxianxing"></i></p>
     <section class="main">
       <router-view/>
     </section>
@@ -20,7 +22,6 @@
     name: 'App'
   }
 </script>
-
 <style>
   html,body,#app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -31,9 +32,14 @@
     padding: 0;
     font-size: 16px;
   }
+  i{
+    font-size: 80px!important;
+    color: #ff4d51;
+  ;
+  }
   .header {
     padding: 0 10%;
-    height: 60px;
+    /*height: 60px;*/
     background-color: #2c3e50;
   }
   .main{

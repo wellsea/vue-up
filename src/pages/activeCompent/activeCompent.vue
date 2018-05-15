@@ -3,7 +3,6 @@
     <h3>动态组件 compoment</h3>
     <transition name="fade">
       <compoment :is="type"></compoment>
-
     </transition>
     <h3>防止重复渲染dom，v-once缓存作用</h3>
     <child1 v-if="type==='child1'"></child1>
